@@ -27,14 +27,13 @@ function avif_headers_check_avif_headers_test(): array {
 		),
 		'description' => sprintf(
 			'<p>%s</p>',
-			esc_html__(
-				/* translators: 1: image/avif, 2: content-type */
+			esc_html(
 				sprintf(
-					'Images with the mime type %1$s served without the correct %2$s header may not render properly.',
+					/* translators: 1: image/avif, 2: content-type */
+					__( 'Images with the mime type %1$s served without the correct %2$s header may not render properly.', 'performance-lab' ),
 					'image/avif',
 					'content-type'
-				),
-				'performance-lab'
+				)
 			)
 		),
 		'actions'     => '',
