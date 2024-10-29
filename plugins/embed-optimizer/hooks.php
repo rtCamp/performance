@@ -182,7 +182,7 @@ function embed_optimizer_update_markup( WP_HTML_Tag_Processor $html_processor, b
 		'iframe' => 'embed_optimizer_iframe',
 	);
 	$function_name  = __FUNCTION__;
-	$trigger_error  = static function ( string $message ) use ( &$function_name ): void {
+	$trigger_error  = static function ( string $message ) use ( $function_name ): void {
 		wp_trigger_error( $function_name, esc_html( $message ) );
 	};
 	try {
